@@ -16,6 +16,6 @@ variables:
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build 
-  - task: ProtectWithDotfuscatorCE@1
+- task: ProtectWithDotNetReactor@1
   inputs:
-  configFile: 'C:\\Program Files (x86)\\Eziriz\\.NET Reactor\\dotNET_Reactor.Console.exe'
+  reactorPath: 'C:\Program Files (x86)\Eziriz\.NET Reactor\dotNET_Reactor.Console.exe'
