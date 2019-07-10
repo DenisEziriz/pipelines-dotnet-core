@@ -5,10 +5,8 @@
 
 trigger:
 - master
-- task: ProtectWithDotfuscatorCE@1
-  inputs:
-    configFile: 'C:\Program Files (x86)\Eziriz\.NET Reactor\dotNET_Reactor.Console.exe'
-    
+
+
 pool:
   vmImage: 'ubuntu-latest'
 
@@ -18,3 +16,6 @@ variables:
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build $(buildConfiguration)'
+- task: ProtectWithDotfuscatorCE@1
+  inputs:
+    configFile: 'C:\Program Files (x86)\Eziriz\.NET Reactor\dotNET_Reactor.Console.exe'
