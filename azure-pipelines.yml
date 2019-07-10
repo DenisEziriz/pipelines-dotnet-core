@@ -1,12 +1,12 @@
 # ASP.NET Core
-- task: ProtectWithDotNetReactor@1
-  inputs:
-    reactorPath: 'rgserer'
-    reactorProjectFilePath: 'dfgdf'
-    additionalArguments: 'dfgdfg'
 # Build and test ASP.NET Core projects targeting .NET Core.
 # Add steps that run tests, create a NuGet package, deploy, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
+
+trigger2:
+- task: ProtectWithDotNetReactor@1
+  inputs:
+    reactorPath: 'C:\Program Files (x86)\Eziriz\.NET Reactor\dotNET_Reactor.Console.exe'
 
 trigger:
 - master
