@@ -18,5 +18,5 @@ steps:
   displayName: 'dotnet build'
 - task: ProtectWithDotNetReactor@1
   inputs:
-    reactorProjectFilePath: '$(Build.ArtifactStagingDirectory)\\bla.nrproj'
-    additionalArguments: '$(Build.ArtifactStagingDirectory)\\bla2.nrproj'
+    reactorProjectFilePath: '$(Build.ArtifactStagingDirectory)\bla.nrproj'
+    additionalArguments: '$(Build.ArtifactStagingDirectory)\bla2.nrproj'
