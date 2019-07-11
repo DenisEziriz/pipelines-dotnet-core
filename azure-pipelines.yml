@@ -19,4 +19,4 @@ steps:
 - task: ProtectWithDotNetReactor@1
   inputs:
     reactorProjectFilePath: '$(Build.Repository.LocalPath)\bla.nrproj'
-    additionalArguments: '$(Build.Repository.LocalPath)\bla2.nrproj'
+    additionalArguments: '$(Build.Repository.LocalPath)\pipelines-dotnet-core.csproj'
