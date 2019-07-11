@@ -18,5 +18,5 @@ steps:
   displayName: 'dotnet build'
 - task: ProtectWithDotNetReactor@1
   inputs:
-    reactorProjectFilePath: '$(Build.Repository.LocalPath)\bla.nrproj'
+    reactorProjectFilePath: '$(Build.Repository.LocalPath)\pipelines-dotnet-core.csproj'
     additionalArguments: '$(Build.Repository.LocalPath)\pipelines-dotnet-core.csproj'
