@@ -19,5 +19,5 @@ steps:
 - task: ProtectWithDotNetReactor@1
   displayName: 'Protect With Dot Net Reactor'
   inputs:
-    reactorProjectFilePath: '\bla.nrproj'
+    reactorProjectFilePath: ''
     additionalArguments: '-file $(Build.Repository.LocalPath)\bin\Release\netcoreapp2.2\pipelines-dotnet-core.dll'
