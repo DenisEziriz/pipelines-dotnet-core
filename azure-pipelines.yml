@@ -16,7 +16,7 @@ variables:
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build'
-- task: MyCustomTask@1
+- task: ProtectWithDotNetReactor@1
   inputs:
-    someString: 'qwerty'
-    anotherString: 'hello world'
+    reactorProjectFilePath: 'dsd'
+    additionalArguments: 'fff'
