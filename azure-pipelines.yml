@@ -20,4 +20,4 @@ steps:
   displayName: 'Protect With Dot Net Reactor'
   inputs:
     reactorProjectFilePath: '$(Build.Repository.LocalPath)\pipelines-dotnet-core.csproj'
-    additionalArguments: '$(Build.Repository.LocalPath)\pipelines-dotnet-core.csproj'
+    additionalArguments: '-file $(Build.Repository.LocalPath)\bin\Release\netcoreapp2.2\pipelines-dotnet-core.dll'
