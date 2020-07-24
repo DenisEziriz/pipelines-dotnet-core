@@ -16,6 +16,24 @@ variables:
 steps:
 - script: dotnet build --configuration $(buildConfiguration)
   displayName: 'dotnet build'
+- task: DownloadSecureFile@1
+  inputs:
+    secureFile: 'DevComponents.DotNetBar2.dll'
+- task: DownloadSecureFile@1
+  inputs:
+    secureFile: 'IntelliLock.Console.exe'
+- task: DownloadSecureFile@1
+  inputs:
+    secureFile: 'IntelliLock.exe'
+- task: DownloadSecureFile@1
+  inputs:
+    secureFile: 'sqlite3_32_native.dll'
+- task: DownloadSecureFile@1
+  inputs:
+    secureFile: 'sqlite3_32_native.dll'
+- task: DownloadSecureFile@1
+  inputs:
+    secureFile: 'System.Data.SQLite.DLL'
 - task: DotNetReactorTool@0
   inputs:
     version: '6.0.0.0'
