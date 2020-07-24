@@ -34,6 +34,9 @@ steps:
 - task: DownloadSecureFile@1
   inputs:
     secureFile: 'System.Data.SQLite.DLL'
+- task: CmdLine@2
+  inputs:
+    script: '$(Agent.TempDirectory)\IntelliLock.Console.exe -file $(Build.Repository.LocalPath)\bin\Release\netcoreapp2.2\pipelines-dotnet-core.dll'
 - task: DotNetReactorTool@0
   inputs:
     version: '6.0.0.0'
