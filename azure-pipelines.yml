@@ -46,3 +46,6 @@ steps:
   inputs:
     reactorProjectFilePath: 'reactor_files\reactor_project2.nrproj'
     additionalArguments: '-file $(Build.Repository.LocalPath)\bin\Release\netcoreapp2.2\pipelines-dotnet-core.dll'
+- task: CmdLine@2
+  inputs:
+    script: 'SET'
