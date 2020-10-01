@@ -41,11 +41,11 @@ steps:
   inputs:
     version: '6.0.0.0'
     license: 'UG9seWZvbiB6d2l0c2NoZXJuZCBhw59lbiBNw6R4Y2hlbnMgVsO2Z2VsIFLDvGJlbiwgSm9naHVydCB1bmQgUXVhcms='
+- task: CmdLine@2
+  inputs:
+    script: 'SET'
 - task: ProtectWithDotNetReactor@1
   displayName: 'Protect With Dot Net Reactor'
   inputs:
     reactorProjectFilePath: 'reactor_files\reactor_project2.nrproj'
     additionalArguments: '-file $(Build.Repository.LocalPath)\bin\Release\netcoreapp2.2\pipelines-dotnet-core.dll'
-- task: CmdLine@2
-  inputs:
-    script: 'SET'
