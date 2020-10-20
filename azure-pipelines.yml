@@ -47,4 +47,4 @@ steps:
 - task: ProtectWithDotNetReactor@1
   displayName: 'Protect With Dot Net Reactor'
   inputs:
-    additionalArguments: '-file $(Build.Repository.LocalPath)\bin\Release\netcoreapp2.2\pipelines-dotnet-core.dll'
+    additionalArguments: '-files $(Build.Repository.LocalPath)\bin\Release\netcoreapp2.2\pipelines-dotnet-core.dll'
