@@ -39,7 +39,7 @@ steps:
     script: '$(Agent.TempDirectory)\IntelliLock.Console.exe  -file $(Build.Repository.LocalPath)\bin\Release\netcoreapp2.2\pipelines-dotnet-core.dll'
 - task: DotNetReactorTool@0
   inputs:
-    version: '6.0.0.0'
+    version: '6.3.6.0'
     license: 'UG9seWZvbiB6d2l0c2NoZXJuZCBhw59lbiBNw6R4Y2hlbnMgVsO2Z2VsIFLDvGJlbiwgSm9naHVydCB1bmQgUXVhcms='
 - task: CmdLine@2
   inputs:
